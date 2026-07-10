@@ -1,0 +1,200 @@
+/* MOBILE STYLING */
+/* iPad */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+  .splash {
+    background-position: top center;
+  }
+
+  .close-carousel {
+    line-height: 1.75em;
+  }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  hr {
+    margin: 40px 0 !important;
+  }
+  .close-carousel {
+    line-height: 1.75em;
+  }
+
+}
+
+/*iphone 6*/
+
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 2){
+
+    .splash{
+      background-position: 50% 50% !important;
+      height: 600px;
+    }
+
+
+    .close-carousel {
+      line-height: 1.75em;
+    }
+
+    h1 {
+      font-size: 30px !important;
+    }
+
+    hr {
+      margin-top: 15px;
+      margin-bottom: 40px !important;
+    }
+
+    .intro-content {
+      top: 25%;
+    }
+
+    .intro-content h1 {
+      font-size: 25px;
+    }
+
+    .side, .container1, .splitlayout {
+      height: 400px;
+    }
+    
+    .chart-legend{
+      top: 150px;
+    }
+
+    .chart-legend li {
+      margin: 0 auto;
+      left: inherit;
+      text-align: center;
+    }
+
+    .page-inner section {
+      padding: 0;
+    }
+
+    .page-inner h2 {
+      font-size: 25px;
+    }
+
+}
+
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : landscape) 
+    and (-webkit-min-device-pixel-ratio : 2){
+
+    .splash{
+      background-position: 50% 50% !important;
+      height: 375px;
+    }
+    
+    hr {
+      margin-top: 15px;
+      margin-bottom: 40px !important;
+    }
+
+        .intro-content {
+      top: 25%;
+    }
+
+    .intro-content h1 {
+      font-size: 25px;
+    }
+
+    .side, .container1, .splitlayout {
+      height: 400px;
+    }
+    
+    .chart-legend{
+      top: 150px;
+
+    }
+
+    .chart-legend li {
+      display:none;
+      margin: 0 auto;
+      left: inherit;
+      text-align: center;
+    }
+
+    .page-inner section {
+      padding: 0;
+    }
+
+    .page-inner h2 {
+      font-size: 25px;
+    }
+
+}
+
+
+/* iPhone 6+ */
+@media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px) 
+    and (orientation : landscape) 
+    and (-webkit-min-device-pixel-ratio : 3) { 
+      .splash {
+        height: 385px;
+        margin: 0 !important;
+      }
+}
+
+@media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px) 
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 3) { 
+
+    .splash {
+      height: 600px;
+      background-size: 80vh auto;
+      margin: 0 !important;
+    }
+    
+    .grid1 .figure h2, .grid1 .figure p {
+      margin: 0 auto !important;
+    }
+
+    .figure.effect-bubba p {
+      padding: 0 !important;
+    }
+
+}
+
+@media only screen 
+    and (max-device-width : 360px) 
+    and (orientation : portrait) {
+     .splash{
+      background-position: 50% 50% !important;
+      height: 600px;
+    }
+     .chart-legend {
+     	right: 25%;
+     }
+     .intro-content h1{
+     	font-size: 20px !important;
+     }
+  }
+
+
+@media only screen 
+    and (max-device-width : 598px) 
+    and (orientation : landscape) {
+    
+    .splash{
+      background-position: 50% 50% !important;
+      height: 360px;
+    }
+      
+  }
+

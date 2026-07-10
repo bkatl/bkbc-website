@@ -1,0 +1,88 @@
+.ie9 .intro-content{
+	top: 0% !important;
+	left: 25% !important;
+}
+
+.overlay, .back, .more-design, .more-dev {
+	display: none!important;
+}
+
+.side, .side * {
+	cursor: default !important;
+}
+
+/* Open and close */
+
+
+.open-right .side-left .overlay,
+.open-left .side-right .overlay {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: opacity 0.6s;
+	transition: opacity 0.6s;
+}
+
+/* Right side open */
+.open-right .side-left {
+	-webkit-transform: translateX(0);
+	transform: translateX(0%);
+}
+
+.open-right .side-right {
+	z-index: 200;
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
+}
+
+.close-right .side-right {
+	z-index: 200;
+}
+
+.open-right .side-right .intro-content {
+	-webkit-transform: translateY(0%) translateX(0%) scale(1);
+	transform: translateY(0%) translateX(0%) scale(1);
+}
+
+.open-right .page-right {
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
+}
+
+/* Left side open */
+.open-left .side-right {
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
+}
+
+.open-left .side-left {
+	z-index: 200;
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
+}
+
+.close-left .side-left {
+	z-index: 200;
+}
+
+.open-left .side-left .intro-content {
+	-webkit-transform: translateY(-0%) translateX(-0%) scale(1);
+	transform: translateY(-0%) translateX(-0%) scale(1);
+}
+
+.open-left .codropsheader {
+	opacity: 1;
+	visibility: hidden;
+	-webkit-transition: opacity 0.3s, visibility 0.1s 0.3s;
+	transition: opacity 0.3s, visibility 0.1s 0.3s;
+}
+
+.open-left .page-left {
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
+}
+
+.grid1 .figure h2, .grid1 .figure p { margin-top: -20px !important;}	
+
+.figure.effect-romeo .figcaption:before, .figure.effect-romeo .figcaption:after{
+	display: none !important;
+}

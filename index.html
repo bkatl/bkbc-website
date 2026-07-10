@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html style="font-size: 16px !important;" ng-app="portfolio" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>My Personal Site</title>
+
+    <link href="common/css/main.css" rel="stylesheet"> 
+    <link href="common/css/component.css" rel="stylesheet"> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="common/js/lazyload.js"></script>
+    <script src="common/js/angular.min.js"></script>
+    <script type="text/javascript" src="common/js/fullpage.js"></script>
+    <script type="text/javascript" src="common/js/pace.min.js"></script>
+
+
+<script> 
+var $buoop = {vs:{i:10,f:15,o:12.1,s:5.1},c:2}; 
+function $buo_f(){ 
+ var e = document.createElement("script"); 
+ e.src = "//browser-update.org/update.js"; 
+ document.body.appendChild(e);
+};
+try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+catch(e){window.attachEvent("onload", $buo_f)}
+</script> 
+  
+
+    <script type="text/javascript">
+     
+      $(function() {
+
+
+//Chrome especially...scroll up on refresh
+   $(window).on('beforeunload', function() {
+      $(window).scrollTop(0);
+    });
+
+     
+        $(".port-container.lazy, .thumb.lazy").lazyload({
+            effect : 'fadeIn'
+        });
+      });
+    
+    </script>
+    <style type="text/css">
+    
+.ie10 #fullpage[style] {
+  background-size: 800px auto;
+  height: 800px !important;
+
+}
+    
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #989898;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
+.coverup {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+    </style>
+
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <link rel="stylesheet" type="text/css" href="common/css/ie.css">
+    <![endif]-->
+  
+    <link href="common/css/folio-hover.css" rel="stylesheet"> 
+    <link href="common/css/normalize.css" rel="stylesheet"> 
+    <link href="common/css/bootstrap.css" rel="stylesheet"> 
+    <link href="common/css/mobile.css" rel="stylesheet"> 
+
+  </head>
+  <div class="windowMeasure"></div>
+  <body id="top" style="font-size: inherit !important;">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">My Business Site</a>
+        </div>
+        <div class="navbar-collapse collapse" id="collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#section1">Our Mission</a></li>
+            <li><a href="#section2">The Process</a></li>
+            <li><a href="#gallery">Our Services</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+      <div class="coverup"></div>
+      <section id="fullpage" class="splash">
+        <div class="container">
+          <h1 style="position: relative; top: 200px;">
+            
+          </h1>
+        </div>
+      </section>
+      <hr id="section1" class="container">
+      <section class="about">
+        <div style="text-align: center;" class="container">
+          <h1> FIRST SECTION</h1>
+          <div class="bio">
+            <p>
+              Mission Statement
+            </p>
+            <br>
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum dolor nunc, in tincidunt est dictum euismod. Curabitur non tincidunt augue. Vestibulum non interdum lectus. Sed at molestie libero. Morbi tempus, velit ac tincidunt facilisis, est sapien lacinia leo, quis aliquam nulla massa non nulla. Pellentesque risus purus, pretium vel orci vitae, pulvinar imperdiet quam. Suspendisse sollicitudin est ut justo tincidunt facilisis. Vivamus et laoreet est. Quisque facilisis ornare diam, in rutrum turpis varius vitae. Curabitur finibus justo ac mollis ullamcorper. Quisque sapien nisi, vehicula nec aliquam vel, scelerisque non nulla. Maecenas sit amet auctor ante. Praesent ut enim non dolor vestibulum vestibulum vitae a felis. Phasellus hendrerit vulputate blandit.             
+            </p>
+          </div>
+          </div>
+          <div class="container">
+            <img class="suit" src="common/images/img_suit.png">
+          </div>
+
+      </section>
+
+      <hr id="section2" class="container">
+
+      <section class="skills">
+        <div style="text-align: center; padding-bottom: 10px;" class="container">
+          <h1>NEXT SECTION</h1>
+          <p>
+            <p>
+              Our Method
+            </p>
+            <br>
+            <br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum dolor nunc, in tincidunt est dictum euismod. Curabitur non tincidunt augue. Vestibulum non interdum lectus. Sed at molestie libero. Morbi tempus, velit ac tincidunt           </p>
+        </div>
+          <div class="wrapper" style="position: relative;">
+          <div class="container1">
+            <div id="splitlayout" class="splitlayout">
+              <div class="intro">
+                <div class="side side-left">
+                  <div class="intro-content">
+                    <h1><span>What We Do</span></h1>
+                    <div class="profile left flag">   
+                      <div class="more-design">More</div>
+
+
+                    </div>
+                  </div>
+                  <div class="overlay"></div>
+                </div>
+
+                <div class="side side-right">
+                  <div class="intro-content">
+                    <h1><span>How We Do It </span></h1>
+                   <div class="profile right">
+                      <div class="more-dev">More</div>
+
+
+                    </div>
+                  </div>
+                  <div class="overlay"></div>
+                </div>
+              </div><!-- /intro -->
+              <div class="page page-right">
+                <div class="page-inner">
+                  <section>
+                    <h2>What I Do</h2>
+                    <hr>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum dolor nunc, in tincidunt est dictum euismod. Curabitur non tincidunt augue. Vestibulum non interdum lectus. Sed at molestie libero. Morbi tempus, velit ac tincidunt           
+                    </p>
+                  </section>
+                </div><!-- /page-inner -->
+              </div><!-- /page-right -->
+              <div class="page page-left">
+                <div class="page-inner">
+                  <section>
+                    <h2>How I Do It</h2>
+                    <hr>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum dolor nunc, in tincidunt est dictum euismod. Curabitur non tincidunt augue. Vestibulum non interdum lectus. Sed at molestie libero. Morbi tempus, velit ac tincidunt           
+                    </p>
+                  </section>
+                </div><!-- /page-inner -->
+              </div><!-- /page-left -->
+              <a href="" class="back back-right" title="back to intro">&rarr;</a>
+              <a href="" class="back back-left" title="back to intro">&larr;</a>
+            </div><!-- /splitlayout -->
+          </div><!-- /container1 -->
+          </div>      
+      </section>
+
+      <hr id="gallery" class="container" style="padding-top: 0;">
+
+      <section class="portfolio">
+      <section class="skills">
+        <div style="text-align: center; padding-bottom: 10px;" class="container">
+          <h1>LAST SECTION</h1>
+          <p>
+            <p>
+              Services
+            </p>
+            <br>
+            <br>
+        </div>
+          <ul class="port-project">
+            <div class="sheet"></div>
+              <div ng-controller="CarouselDemoCtrl as demo">
+                <div class="list-parent grid1" ng-repeat="product in demo.products">
+                  <li class="thumb lazy figure effect-romeo">
+                      <img ng-src="{{product.cover}}"/>
+                      <div class="figcaption">
+                        <h2>{{product.title}}</h2>
+                        <p></p>
+                        <a>View more</a>
+                      </div>     
+                  </li>
+                  <div class="expand">
+                    <div class="close-carousel">X</div>
+                      <div class="carousel-caption col-md-4">
+                        <h3>{{product.title}}</h3>
+                        <p style="width: 90%;">{{product.text}}</p>
+                      </div>
+                      <carousel interval="myInterval">
+                        <slide ng-repeat="image in product.images" active="products.active1">
+                          <div class="port-container">
+                          <img class="portfolio-piece" ng-src="{{image}}"/>
+                          </div>
+                        </slide>
+                      </carousel>
+                  </div>
+              </div>
+             </div>
+          </ul>
+         </section>
+         <section class="resume" style="padding-top: 0;">
+          <div id="contact" style="text-align: center;" class="container">
+            <h1>LEARN MORE</h1>
+            <span>Put a form/map here or possibly download a white paper of business overview</span>
+            <br>
+            <a href="" target="_blank" class="contact">Download Something</a>
+          </div>
+         </section>
+
+      <!-- FOOTER -->
+
+      <footer>
+        <div class="container">
+          <a href="#top"><p class="pull-right">^</p></a>
+          <p id="copyright">&copy; 2016 - My Business Site</p>
+        </div>
+      </footer>
+
+    <script src="common/js/index.js"></script>
+    <script src="common/js/classie.js"></script>
+    <script src="common/js/modernizr.js"></script>
+    <script src="common/js/cbpSplitLayout.js"></script>
+    <script src="common/js/bootstrap.min.js"></script>
+    <script src="common/js/ui-bootstrap.js"></script>
+    <script src="common/js/inview.js"></script>
+    <script src="common/js/app.js"></script>
+<!--    <script src='common/js/chart.js'></script> -->
+<!--    <script src="common/js/chartAnimation.js"></script> -->
+
+
+  </body>
+</html>
