@@ -1,1 +1,1 @@
-console.log('BKBC starter');
+document.addEventListener('DOMContentLoaded',()=>console.log('BKBC v1.1 patch loaded'));
