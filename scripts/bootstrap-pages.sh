@@ -37,27 +37,9 @@ cat > "$FILE" <<EOF
 
 <body>
 
-<header>
+<div id="navbar"></div>
 
-<nav>
-
-<a href="index.html">Home</a>
-
-<a href="programs.html">Programs</a>
-
-<a href="events.html">Events</a>
-
-<a href="chop-shop.html">Chop Shop</a>
-
-<a href="membership.html">Membership</a>
-
-<a href="gallery.html">Gallery</a>
-
-<a href="contact.html">Contact</a>
-
-</nav>
-
-</header>
+<main>
 
 <section class="page-hero">
 
@@ -66,20 +48,16 @@ cat > "$FILE" <<EOF
 <h1>${PAGE^}</h1>
 
 <p>
-This page is currently under development.
+Billionaire Kids Book Club
 </p>
 
 </div>
 
 </section>
 
-<footer>
+</main>
 
-<p>
-© $(date +%Y) Billionaire Kids Book Club
-</p>
-
-</footer>
+<div id="footer"></div>
 
 <script src="common/js/main.js"></script>
 
@@ -93,4 +71,4 @@ echo "✔ Created ${FILE}"
 done
 
 echo ""
-echo "Done."
+echo "Bootstrap complete."
