@@ -1,65 +1,74 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+set -e
 
 PAGES=(
-"programs.html"
-"events.html"
-"membership.html"
-"gallery.html"
-"chop-shop.html"
-"contact.html"
+  "programs"
+  "events"
+  "membership"
+  "gallery"
+  "chop-shop"
+  "contact"
 )
+
+echo "Creating BKBC pages..."
 
 for PAGE in "${PAGES[@]}"
 do
-TITLE=$(basename "$PAGE" .html)
 
-cat > "$PAGE" <<EOF
+FILE="${PAGE}.html"
+
+cat > "$FILE" <<EOF
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BKBC | ${TITLE^}</title>
+<title>BKBC | ${PAGE^}</title>
 
-    <link rel="stylesheet" href="common/css/bootstrap.css">
-    <link rel="stylesheet" href="common/css/main.css">
-    <link rel="stylesheet" href="common/css/mobile.css">
+<link rel="stylesheet" href="common/css/bootstrap.css">
+<link rel="stylesheet" href="common/css/main.css">
+<link rel="stylesheet" href="common/css/mobile.css">
 
 </head>
 
 <body>
 
-    <div id="navbar"></div>
+<div id="navbar"></div>
 
-    <main>
+<main>
 
-        <section class="page-hero">
+<section class="page-hero">
 
-            <div class="container">
+<div class="container">
 
-                <h1>${TITLE^}</h1>
+<h1>${PAGE^}</h1>
 
-                <p>
-                    Billionaire Kids Book Club
-                </p>
+<p>
+Billionaire Kids Book Club
+</p>
 
-            </div>
+</div>
 
-        </section>
+</section>
 
-    </main>
+</main>
 
-    <div id="footer"></div>
+<div id="footer"></div>
 
-    <script src="common/js/main.js"></script>
+<script src="common/js/main.js"></script>
 
 </body>
 
 </html>
 EOF
 
-echo "Created $PAGE"
+echo "✔ Created ${FILE}"
 
 done
+
+echo ""
+echo "Bootstrap complete."
