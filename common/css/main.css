@@ -182,10 +182,9 @@
    PROGRAMS
 =========================== */
 
-.programs{
-
-    background:#10151c;
-
+.programs {
+    background: #101418;
+    padding: 80px 0;
 }
 
 .section-heading{
@@ -214,14 +213,11 @@
 
 }
 
-.program-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-    gap:30px;
-
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
 }
 
 .program-card{
@@ -246,14 +242,11 @@
 
 }
 
-.program-card img{
-
-    width:100%;
-
-    height:240px;
-
-    object-fit:cover;
-
+.program-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
 }
 
 .program-info{
@@ -268,4 +261,16 @@
 
     font-weight:700;
 
+}
+
+.program-card {
+    overflow: hidden;
+    border-radius: 16px;
+    background: #1b2128;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0,0,0,.35);
 }
