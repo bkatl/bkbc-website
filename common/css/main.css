@@ -1,13 +1,3 @@
-*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:#0f1419;color:#fff}
-.nav{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:18px 40px;background:#111827}
-nav a{color:#fff;text-decoration:none;margin-left:18px}.join,.btn{background:#14833B;padding:12px 18px;border-radius:8px}
-.hero{min-height:90vh;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),#1b4d2d;display:flex;align-items:center;justify-content:center;text-align:center}
-.overlay{max-width:900px;padding:30px}.hero h1{font-size:4rem;margin:0}.hero p{font-size:1.25rem}
-.actions{margin-top:24px}.btn{display:inline-block;color:#fff;text-decoration:none;margin:8px}.secondary{background:#222}
-section{padding:70px 40px}.impact{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
-.impact div,.card,.shop,.cta{background:#1b2128;padding:24px;border-radius:12px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-footer{text-align:center;padding:40px;background:#111827}
-@media(max-width:768px){.nav{flex-direction:column}.hero h1{font-size:2.6rem}}
 
 /* =====================================================
    NAVIGATION
