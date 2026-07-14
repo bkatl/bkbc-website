@@ -247,7 +247,8 @@
     transform:translateY(-10px);
 
 }
-
+/*
+/*
 .program-card img {
     display: block;
     width: 100%;
@@ -255,7 +256,20 @@
     aspect-ratio: 4 / 3;
     object-fit: cover;
 }
+*/
+.program-card img{
 
+    display:block !important;
+
+    width:100% !important;
+
+    max-width:100% !important;
+
+    height:220px !important;
+
+    object-fit:cover !important;
+
+}
 .program-info{
 
     padding:25px;
